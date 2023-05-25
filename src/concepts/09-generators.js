@@ -43,5 +43,4 @@ function* myFirstGeneratorFUnction() {
     yield 'Cuarto valor';
 
     return `ya no hay valores`;
-    yield `este ya no se ejecuta`;
 }
