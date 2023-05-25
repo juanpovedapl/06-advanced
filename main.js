@@ -9,6 +9,9 @@ import { asyncComponent } from './src/concepts/05-async';
 import { asyncAwaitComponent } from './src/concepts/06-async-await';
 import { asyncAwait2Component } from './src/concepts/07-async-await-v2';
 import { forAwaitComponent } from './src/concepts/08-for-await';
+import { generatorsFunctionn } from './src/concepts/09-generators';
+
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -17,7 +20,7 @@ document.querySelector('#app').innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1>Hello Vite!</h1>
+    <h1>Que Chimba sog !</h1>
     <div class="card">
       
     </div>
@@ -33,4 +36,5 @@ const element = document.querySelector('.card');
 //asyncComponent(element);
 //asyncAwaitComponent(element);
 //asyncAwait2Component(element);
-forAwaitComponent(element);
+//forAwaitComponent(element);
+generatorsFunctionn(element);
