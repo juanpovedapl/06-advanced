@@ -5,8 +5,17 @@ import { heroes } from '../data/heroes';
  */
 export const forAwaitComponent = async( element ) => {
 
+    const id1 = "5d86371f2343e37870b91ef1";
+    const id2 = "5d86371f9f80b591f499df32";
 
+    const heroIds = heroes.map(hero => hero.id);
+    console.log(heroIds);
 
+    const heroPromises = getHeroesAsync ( heroIds );
+
+    for await(const hero of heroPromises){
+        element.innerHTML += `${ hero.name} <br/>` 
+    }
 }
 
 /**
